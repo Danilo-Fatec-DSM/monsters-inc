@@ -25,11 +25,16 @@
   <section>
     <form action="">
       <label for="email">E-mail</label>
-      <input type="email" name="email" id="email">
+      <label for="nome">Nome</label>
+      <input class="col-1" type="email" name="email" id="email">
+      <input class="col-2" type="text" name="nome" id="nome">
       <label for="senha">Senha</label>
-      <input type="password" name="senha" id="senha">
+      <label for="id">Id</label>
+      <input class="col-1" type="password" name="senha" id="senha">
+      <input class="col-2" type="password" name="id" id="id">
       <button class="botao" onclick="logar()">Entrar</button>
-      <button class="botao" onclick="deletar()">Deletar</button>
+      <button class="botao" onclick="atualizar()">Atualizar</button>
+      <button class="botao col-span-2" onclick="deletar()">Deletar</button>
     </form>
   </section>
   <script src="script.js"></script>
