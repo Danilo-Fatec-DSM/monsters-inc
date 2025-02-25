@@ -51,3 +51,26 @@ function deletar() {
     }
   }
 }
+
+function atualizar() {
+  const id = document.getElementById("id").value;
+  const email = document.getElementById("email").value;
+  const senha = document.getElementById("senha").value;
+  const nome = document.getElementById("nome").value;
+
+  const users = JSON.parse(localStorage.getItem("banco"));
+
+  for (let i = 0; i < users.length; i++) {
+    if (users[i] == null) {
+      continue;
+    } else if (users[i].id == id && users[i].senha == senha) {
+      users[i].email = email;
+      users[i].password = senha;
+      users[i].nome = nome;
+
+      localStorage.setItem("banco", JSON.stringify(users));
+
+      alert("Atualizado");
+    }
+  }
+}
