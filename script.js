@@ -8,17 +8,6 @@ function banco() {
   localStorage.setItem("banco", json);
 }
 
-function login() {
-  let bancoDeDados = JSON.parse(localStorage.getItem("banco"));
-  let login = document.getElementById("login").value;
-  let senha = document.getElementById("senha").value;
-
-  for (let i = 0; i < bancoDeDados.length; i++) {
-    if (login == bancoDeDados[i].email && senha == bancoDeDados[i].senha)
-      window.location.href = "sobre.html";
-  }
-}
-
 function adicionar() {
   let bancoDeDados = JSON.parse(localStorage.getItem("banco")) || [];
   console.log(bancoDeDados);
