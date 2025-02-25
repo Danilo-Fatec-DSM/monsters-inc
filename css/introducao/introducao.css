@@ -1,0 +1,13 @@
+article {
+  display: grid;
+  place-items: center start;
+  padding: 20px 26px;
+}
+
+.eslogan p {
+  color: #ffffff;
+}
+
+.time {
+  align-self: flex-end;
+}

@@ -1,0 +1,28 @@
+#formulario section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+#formulario main p {
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+form {
+  display: grid;
+  gap: 10px 20px;
+}
+
+form label {
+  color: #ffffff;
+}
+
+form input {
+  padding: 14px 20px;
+}
+
+form input:focus {
+  outline-color: #22d4fd;
+}

@@ -1,0 +1,22 @@
+footer {
+  position: relative;
+  background: #22d4fd;
+}
+
+footer article {
+  display: flex;
+  gap: 20px;
+}
+
+footer article p {
+  color: #ffffff;
+}
+
+footer article img:last-child {
+  display: block;
+  position: absolute;
+  max-width: 654px;
+  max-width: 100%;
+  bottom: 80px;
+  right: 0;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body id="formulario">
+  <header>
+    <nav class="navegacao container">
+      <ul class="menu">
+        <li><a href="./">Home</a></li>
+        <li><a href="./">Sobre Nós</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <p class="texto-basico container">Monstros SA uma empresa de qualidade. <br><span class="texto-destaque">Preenche o formulário e envie seus dados!</span></p>
+    <section class="container">
+      <form action="">
+        <label class="texto-basico-pequeno" for="nome">Nome Completo:</label>
+        <label class="texto-basico-pequeno" for="email">E-mail:</label>
+        <input class="col-1" type="text" name="nome" id="nome">
+        <input class="col-2" type="email" name="email" id="email">
+        <label class="texto-basico-pequeno" for="senha">Senha:</label>
+        <input class="col-span-2" type="password" name="senha" id="senha">
+        <button class="botao col-1" onclick="adicionar()">Cadastrar</button>
+        <a class="botao col-2" href="./login.html">Já tenho conta</a>
+      </form>
+      <img src="img/monstros-2.svg" width="518" height="322" alt="">
+    </section>
+  </main>
+
+  <footer>
+    <article class="container">
+      <img src="./img/porta-azul.svg" width="58" height="82" alt="">
+      <p class="texto-basico">Desenvolvido por Monstros SA.</p>
+    </article>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

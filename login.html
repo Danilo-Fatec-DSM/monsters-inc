@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Login</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body id="login">
+  <header>
+    <nav class="navegacao container">
+      <ul class="menu">
+        <li><a href="./">Home</a></li>
+        <li><a href="./">Sobre Nós</a></li>
+      </ul>
+      <ul class="login">
+        <li><a href="./formulario.html">Cadastro</a></li>
+        <li><a href="./login.html">login</a></li>
+        <img src="./img/porta-roxa.svg" alt="">
+      </ul>
+    </nav>
+  </header>
+  <section>
+    <form action="">
+      <label for="email">E-mail</label>
+      <input type="email" name="email" id="email">
+      <label for="senha">Senha</label>
+      <input type="password" name="senha" id="senha">
+      <button class="botao" onclick="logar()">Entrar</button>
+      <button class="botao" onclick="deletar()">Deletar</button>
+    </form>
+  </section>
+  <script src="script.js"></script>
+</body>
+
+</html>

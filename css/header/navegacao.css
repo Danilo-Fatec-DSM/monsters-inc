@@ -1,0 +1,38 @@
+header {
+  margin-bottom: 30px;
+}
+.navegacao {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 20px;
+}
+
+.navegacao ul {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.navegacao a {
+  color: #22d4fd;
+  font: 1.125rem "Arial", sans-serif;
+  padding: 10px 14px;
+}
+
+.login {
+  position: relative;
+}
+
+.login li:first-child::after {
+  content: "";
+  position: absolute;
+  background: #22d4fd;
+  width: 3px;
+  height: 40px;
+  bottom: 5px;
+  left: 105px;
+}
+
+footer article::after {
+  content: none;
+}
